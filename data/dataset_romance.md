@@ -1,6 +1,17 @@
 ```
 mutation movies_romance {
 
+titanic: insertmovies_by_genre(
+    value: { 
+      genre:"Romance", 
+      year:1997,
+      title:"Titanic",
+      synopsis:"A ship of dreams becomes a ship of nightmare and horror after craping along an iceburg.",
+      duration:194,
+      thumbnail:"https://imgur.com/pMCrpy9"}) {
+    value{title}
+    }
+
 lovemercy1: insertmovies_by_genre(
     value: { 
       genre:"Romance", 
